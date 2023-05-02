@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		th, td{
+			font-family: Buenard;
+		}
+		h1{
+			font-family: 'Oswald', sans-serif;
+		}
+		img{
+			height: 90px;
+			width: 90px;
+		}
+	</style>
+	<title>Q3 Exercise 2</title>
+</head>
+<body>
+	<center> <h2>Temperature Conversion</h2> </center>
+	<center><p id= 'date'></p></center>
+
+	<center><script type="text/javascript">
+		const DT = new Date();//constant declaration for date object
+		document.getElementById('date').innerHTML = DT;
+	</script></center>
+
+	<div class="container">
+
+		<table class="table table-striped table-hover table-act table-active">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light">
+	<center><h3 class="bg-dark text-light text-center">Temperature Conversion</h3></center>
+		<form class="form-inline">
+		</form>
+	</nav>
+	<table class="table table-striped table-hover table-act table-active">
+		<tr>
+			<th>In Celsius</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>-273.15 C</td>
+			<th>Absolute Zero
+Temperature</th>
+		</tr>
+		<tr>
+			<td>0 C</th>
+			<th>Freezing/melting point
+of water</th>
+		</tr>
+		<tr>
+					<tr>
+			<td>21 C</td>
+			<th>In Room Temperature</th>
+		</tr>
+		<tr>
+					<tr>
+			<td>37 C</td>
+			<th>Average Human Body Temperature</th>
+		</tr>
+					<tr>
+			<td>100 C</td>
+			<th>Boiling Point Of Water</th>
+		</tr>
+	</table>
+<h1>Fahrenheit to Celsius Converter</h1>
+
+<label>Enter temperature in Fahrenheit:</label>
+<input type="number" id="fahrenheit" />
+
+<p id="result"></p>
+
+<button onclick="convert()">Convert</button>
+
+<script>
+function convert() {
+var fahrenheit = document.getElementById("fahrenheit").value;
+var celsius = ((fahrenheit - 32) * 5) / 9;
+document.getElementById("result").innerHTML =
+"Temperature in Celsius: " + celsius + "°C";
+}
+</script>
+</body>
+</html>
+</body>
+</html>
